@@ -32,7 +32,7 @@ previousbtn.addEventListener("click",()=>{
 })
 
 async function FetchApi(s){
-       let response=await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=4c1e50bb&s=${s}&page=${page}`);
+       let response=await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=4c1e50bb&s=${s}&page=${page}`);
        let movies=await response.json();
        console.log("hi")
        return movies;
