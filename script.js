@@ -18,7 +18,7 @@ searchB.addEventListener("input",async()=>{
 })
 
 nextbtn.addEventListener("click",()=>{
-    if(page<totalpage){
+    if(page<totalpage-1){
         page++;
     }
    
