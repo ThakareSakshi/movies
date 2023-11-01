@@ -41,9 +41,13 @@ async function addTomain(listOfMovies){
     try{
         let main_container=document.createElement("div")
     listOfMovies.forEach(element => {
+        let poster=element.Poster;
+        if(poster=="N/A"){
+            poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwWieQ-4kYhiLJUdZ8LV3PXqaIg9oqvRk-8Q&usqp=CAU"
+        }
         let container=document.createElement("div");
         container.classList.add("movie-card");
-        container.innerHTML=`<img src="${element.Poster}" alt="image unavailable">
+        container.innerHTML=`<img src="${poster}" alt="img not availble">
         <p class="movie-name">${element.Title}</p>
         <p class="year">${element.Year}</p>
        `;

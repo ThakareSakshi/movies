@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 nav{
     width: 100%;
@@ -63,9 +65,10 @@ button{
     object-fit: cover;
     /* border-radius: 20px; */
     overflow: hidden;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     background-color: beige;
     min-width: 150px;
+    box-shadow: 2px 2px 8px grey;
 }
 img{
     width: 100%;
