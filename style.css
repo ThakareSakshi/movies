@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    position: absolute;
+    color:red;
+    z-index: 54;
+}
+.hero-section{
+    background:url("https://www.livemint.com/lm-img/img/2023/09/09/1600x900/Jawan-will-have-a-solo-release-across-4-500-5-000-_1693938109454_1694228916590.jpg");
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: changeBg 15s infinite alternate ease;
+}
+.back-cover{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    background: rgba(0,0,0,.8);
+}
+.heading{
+    font-size: 70px;
+    font-weight: bold;
+    color:white;
+}
+.intro{
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
+button{
+    padding:10px 24px;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    color:white;
+}
+#search{
+    padding:10px;
+    border-radius: 20px;
+    border:2px solid white;
+    color:white;
+    width: 60%;
+    background: transparent;
+}
+.movie-hub{
+    font-size: 20px;
+    font-weight: bold;
+}
+.movie-card{
+    width: 18%;
+    object-fit: cover;
+    /* border-radius: 20px; */
+    overflow: hidden;
+    border: 1px solid grey;
+    background-color: beige;
+    min-width: 150px;
+}
+img{
+    width: 100%;
+    height: 80%;
+}
+.movie_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    padding: 30px;
+}
+.movie-name{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.year{
+    font-weight: 400;
+    text-align: center;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    align-items: center;
+}
+@keyframes changeBg {
+    0%{
+        background: url("https://www.filmybowl.com/wp-content/uploads/2022/05/Sita-Raman-Gets-Its-Release-Date..jpg") fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    35%{
+        background: url("https://cdn.mos.cms.futurecdn.net/gyLvM38LoHbeQiZXkfmEyS.jpg") fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    65%{
+        background: url("https://assets-in.bmscdn.com/discovery-catalog/events/et00037453-vhnjxdywun-landscape.jpg") fixed;;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/5D53/production/_128319832_rrr.jpg") fixed;;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
